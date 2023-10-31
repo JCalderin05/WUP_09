@@ -103,4 +103,4 @@ The best model using two variables to predict Pike weight is Length1 and Length3
 
 The best model using two variables to predict Roach weight is Length3 and Width. The equation is Weight= -319.118 + 8.278 * Length3 + 72.300 * Width.
 
-
+  
