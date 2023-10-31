@@ -55,11 +55,23 @@ Pike = filter(fish, Species == 'Pike')
 ### Best Two regressor model
 
 ```{r}
-
+modelPike = regsubsets(Weight ~ Length1 + Length2 + Length3 + Height + Width, data = Pike)
+summary(modelPike)
 ```
 
+## Best 2-Variable Predictor is Length1 and Length3
+
+```{r}
+best2Pike= lm(Weight ~ Length1 + Length3,  data = Pike)
+summary(best2Pike)
+```
+
+## Best 2-Variable Equation
+
+Weight= -1675.79 + -105.64 * Length1 + 141.25 * Length3
 
 ## Roach
+
 
 ### Best Models
 
